@@ -48,7 +48,7 @@ For create this system was used:
 ---
 
 <h1 align="center">
- <img src="learningschool.gif">
+ <img src="learningschoolgif.gif">
 </h1>
 
 
