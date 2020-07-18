@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {%block title%}
+        <title>Learning School</title>
+    {%endblock%}
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+   
+        <header>
+            <div class="links">
+             {%block header%}
+             {%endblock%}
+                <a href="/teachers">Teachers</a>
+                <a href="/students">Students</a>
+            </div>
+        </header>
+    
+       {%block content%}
+       {%endblock%}
+       <script src="/scripts.js"></script>
+    </body>
+</html>

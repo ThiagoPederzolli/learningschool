@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="card">
+    <section class="avatar" style="   
+    background: url({{teacher.avatar_url}}) no-repeat center center / cover">
+
+    </section>
+    <section class="details">
+        <h3>Informations</h3>
+        <div class="item">
+            <div>Teacher</div>
+            <div>{{teacher.name}}</div>
+        </div>
+        <div class="item">
+            <div>Age</div>
+            <div>{{teacher.age}} years</div>
+        </div>
+        <div class="item">
+            <div>Educational level</div>
+            <div>{{teacher.graduate}}</div>
+        </div>
+        <div class="item">
+            <div>Class type</div>
+            <div>{{teacher.classtype}}</div>
+        </div>
+        <div class="item">
+            <div>Classes</div>
+            <div>
+                {%for study in teacher.studies %}
+                <span>{{ study}}</span> 
+               {%endfor%}   
+            </div>
+        </div>
+        <div class="item">
+            <div>Since</div>
+            <div>{{teacher.created_at}}</div>
+        </div>
+        <form id="form-delete" action="/teachers?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{teacher.id}}">
+            <div class="buttons">
+                <a href="/teachers/{{teacher.id}}/edit" class="button">edit</a>
+                <button type="submit" class="delete">Delete</button>
+            </div>
+        </form>
+        <script src="./scripts.js"></script>
+
+        
+    </section>
+</div>
+{% endblock content %}

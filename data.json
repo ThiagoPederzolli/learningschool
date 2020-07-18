@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Thiago Pederzolli ",
+      "email": "thiagopederzolli@gmail.com",
+      "birth": 571795200000,
+      "grade": "6th Grade",
+      "hours": "15"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Paperside",
+      "email": "hedrack.hf@gmail.com",
+      "birth": 798595200000,
+      "grade": "10th Grade",
+      "hours": "10"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1526253038957-bce54e05968e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Thiago Silva",
+      "birth": 637200000000,
+      "graduate": "Specialist",
+      "classtype": "Presential",
+      "studies": "english, history",
+      "created_at": 1594945858047
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80",
+      "name": "Thiago Pederzolli Machado da Silva",
+      "birth": 653616000000,
+      "graduate": "Master",
+      "classtype": "Online",
+      "studies": "philosophy, art",
+      "created_at": 1594951174025
+    }
+  ]
+}

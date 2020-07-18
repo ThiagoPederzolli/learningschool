@@ -1,0 +1,44 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="card">
+    <section class="avatar" style="   
+    background: url({{student.avatar_url}}) no-repeat center center / cover">
+
+    </section>
+    <section class="details">
+        <h3>Informations</h3>
+        <div class="item">
+            <div>Student</div>
+            <div>{{student.name}}</div>
+        </div>
+        <div class="item">
+            <div>Email</div>
+            <div>{{student.email}}</div>
+        </div>
+        <div class="item">
+            <div>BirthDate</div>
+            <div>{{student.birth}}</div>
+        </div>
+        <div class="item">
+            <div>Grade</div>
+            <div>{{student.grade}}</div>
+        </div>
+        <div class="item">
+            <div>Hours per Week</div>
+            <div>{{student.hours}}</div>
+        </div>
+        
+        <form id="form-delete" action="/students?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{students.id}}">
+            <div class="buttons">
+                <a href="/students/{{student.id}}/edit" class="button">edit</a>
+                <button type="submit" class="delete">Delete</button>
+            </div>
+        </form>
+        <script src="./scripts.js"></script>
+
+        
+    </section>
+</div>
+{% endblock content %}
